@@ -1,0 +1,120 @@
+.swiper {
+    width: 90%;
+    /* padding-top: 50px; */
+    padding-bottom: 30px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .swiper-slide img {
+    position: absolute  ;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px !important;
+}
+  .gameSlider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .gameSlider::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 0.3);
+    border-radius: 30px !important;
+  }
+  .swiper-slide .content{
+    position: absolute;
+    bottom: 20px;
+    width: 60%;
+    z-index: 50000;
+  }
+  .swiper-slide h2{
+    font-family: 'bauhaus 93';
+    font-size: 3.5rem;
+  }
+  .swiper-slide p{
+    color: #ffff;
+    font-size: .8rem;
+  }
+  .swiper-slide span{
+    text-transform: uppercase;
+    color: #ffff;
+  }
+  .swiper-slide .content .buttons{
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .swiper-slide .content .buttons .orderBtn{
+      padding: 8px 20px;
+      background-color: var(--second);
+      border-radius: 10px;
+  }
+  .swiper-slide .content .buttons .playBtn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255 255 255 / 0.2);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .swiper-slide .content .buttons .playBtn .play{
+    display: block;
+  }
+  .swiper-slide .content .buttons .playBtn .pause{
+    display: none;
+  }
+
+  .swiper-slide .content .buttons .playBtn.active .play{
+    display: none;
+  }
+  .swiper-slide .content .buttons .playBtn.active .pause{
+    display: block;
+  }
+
+  .swiper-slide.swiper-slide-active .video iframe{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85%;
+    height: 75%;
+    border-radius: 0 30px 0 30px !important;
+    border: 5px solid transparent;
+    background-color: var(--second);
+    box-shadow: -5px -5px 15px rgb(255 255 255 / .1),
+                5px 5px 15px rgb(0 0 0 / 0.3);
+    z-index: 15000000;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+  }
+  .swiper-slide.swiper-slide-active .video.active iframe{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }

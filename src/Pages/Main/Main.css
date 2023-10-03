@@ -1,0 +1,36 @@
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+    box-shadow: -5px -5px 15px rgb(255 255 255 /.15),
+                5px 5px 15px rgb(0 0 0 /.35),
+               inset -5px -5px 15px rgb(255 255 255 /.15),
+                inset 5px 5px 15px rgb(0 0 0 /.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    transition: .5s;
+}
+section{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    padding: 0px 30px 0px 30px;
+    bottom: 0;
+    opacity: 0;
+    transition: ease-in-out 1s;
+    transform-origin: bottom;
+    z-index: 4535424524;
+}
+section.active{
+    top: 100px;
+    height: auto;
+    overflow-y: visible;
+    opacity: 1;
+}

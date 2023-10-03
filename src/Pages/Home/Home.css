@@ -1,0 +1,124 @@
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sectionTitle{
+    text-transform: uppercase;
+}
+.viewInfo{
+    color: #ffff;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+.viewInfo:hover{
+    color: var(--second);
+}
+
+.promotion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+.promotion .box{
+    position: relative;
+    transition: 1s;
+    padding: 30px;
+    border: 1px solid rgb(0 0 0 /.1);
+    box-shadow: -5px -5px 15px rgb(255 255 255 /.1),
+                5px 5px 15px rgb(0 0 0 /0.35);
+    border-radius: 30px;
+    background-color: var(--bgColor);
+}
+.promotion img{
+    border-radius: 20px;
+    margin-bottom: 15px;
+    max-width: 250px;
+    width: 100%;  
+    object-fit: cover;
+    object-position: center;
+}
+.promotion .box .like{
+    position: absolute;
+    top: 24px;
+    right: 19px;
+    width: 40px;
+    height: 40px;
+    background: var(--bgColor);
+    border-radius: 0 0 0 20px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    transition: .3s;
+}
+.promotion .box .like.active{
+    color: var(--second);
+}
+.game-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.game-feature .gameType{
+    padding: 8px 20px;
+    background-color: var(--second);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.game-feature .rating{
+    color: var(--second);
+    font-size: 1.2rem;
+}
+.gameTitle{
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Bauhaus 93';
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.gamePrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.gamePrice .percent{
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.discount{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+    font-size: 1.2rem;
+
+}
+
+.addBag{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--second);
+    border-radius: 20px 0 0 0;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    transition: .3s;
+}

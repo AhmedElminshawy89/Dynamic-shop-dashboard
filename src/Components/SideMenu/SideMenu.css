@@ -1,0 +1,152 @@
+.sideMenu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    padding: 30px;
+    border: 1px solid rgb(0 0 0 /.1);
+    box-shadow: -5px -5px 15px rgb(255 255 255 /.1),
+                5px 5px 15px rgb(0 0 0 /0.35);
+    border-radius: 30px;
+    background-color: var(--bgColor);
+}
+
+
+.sideMenu .logo{
+    font-family: 'Bauhaus 93';
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.sideMenu .nav{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sideMenu .nav li a{
+    color: #ffff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+}
+.sideMenu .nav li a:hover,
+.sideMenu .nav li a.active{
+    box-shadow: -5px -5px 15px rgb(255 255 255 /.1),
+                5px 5px 15px rgb(0 0 0 /0.35);
+}
+
+
+
+
+.sideMenu .social{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .5s;
+    gap: 20px;
+}
+.sideMenu .social li a{
+    color: #ffff;
+    font-size: 1.5rem;
+    transition: .5s;
+    cursor: pointer;
+}
+.sideMenu .social li .share{
+    background-color: var(--second);
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.sideMenu .social li .share:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+.sideMenu .social li a:hover{
+    color: var(--second);
+}
+
+
+.sideMenu.active{ 
+    width: 10%;
+    transition: 1s;
+    align-items: center;
+    overflow: hidden;
+}
+.sideMenu.active .nav{
+    margin-top: 0px;
+    margin-left: -15px;
+}
+.sideMenu.active .brand,
+.sideMenu.active .nav .name{ 
+    display: none;
+}
+.sideMenu.active .logo{
+    font-size: 2.5rem;
+}
+.sideMenu.active .social{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width:1150px){
+    .sideMenu{
+        padding: 20px;
+    }
+    .sideMenu .logo{
+      font-size: 2.5rem;
+    }
+}
+@media(max-width:982px){
+    .sideMenu .logo .brand{
+      display: none;
+    }
+    .sideMenu .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .sideMenu .name{
+        display: none;
+    }
+    .sideMenu .nav{
+        display: block;
+        margin: 0 auto;
+    }
+    .sideMenu .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media(max-width:668px){
+.sideMenu{
+    display: none;
+}
+.sideMenu.active{ 
+    display: block;
+    position: absolute;
+    width: 65px;
+   left: 0;
+   z-index: 30335435;
+}
+}

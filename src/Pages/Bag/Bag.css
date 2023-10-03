@@ -1,0 +1,15 @@
+.table{
+    color: #fff !important;
+    margin: 50px auto ;
+    text-align: center;
+    width: 90%;
+    overflow: scroll;
+}
+.table img{
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+}
+.table i{
+    cursor: pointer;
+}

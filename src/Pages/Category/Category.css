@@ -1,0 +1,28 @@
+.searchBox{
+    position: relative;
+    margin-top: 15px;
+    transition: 1s;
+    padding: 15px 20px;
+    border: 1px solid rgb(0 0 0 /.1);
+    box-shadow:5px 5px 15px rgb(0 0 0 /0.35);
+    border-radius: 30px;
+    background-color: var(--bgColor);
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.searchBox i{
+    color: #ffff;
+    font-size: 1.3rem;
+}
+.searchBox input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    color: #ffff;
+    caret-color: var(--second);
+    font-size: 1rem;
+}
